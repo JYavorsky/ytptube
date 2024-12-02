@@ -26,8 +26,8 @@ on:
       - ".github/ISSUE_TEMPLATE/**"
 
 env:
-  DOCKERHUB_SLUG: arabcoders/ytptube
-  GHCR_SLUG: ghcr.io/arabcoders/ytptube
+  DOCKERHUB_SLUG: jyavorsky/ytptube
+  GHCR_SLUG: ghcr.io/jyavorsky/ytptube
   PLATFORMS: linux/amd64
 
 jobs:
@@ -96,7 +96,7 @@ jobs:
         uses: arabcoders/action-python-autotagger@master
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          repo_name: arabcoders/ytptube
+          repo_name: jyavorsky/ytptube
           path: app/version.py
           variable: APP_VERSION
 
